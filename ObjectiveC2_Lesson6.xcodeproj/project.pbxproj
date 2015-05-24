@@ -15,6 +15,19 @@
 		8430B0CB1B109E4E009BAF61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8430B0CA1B109E4E009BAF61 /* Images.xcassets */; };
 		8430B0CE1B109E4E009BAF61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8430B0CC1B109E4E009BAF61 /* LaunchScreen.xib */; };
 		8430B0DA1B109E4E009BAF61 /* ObjectiveC2_Lesson6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430B0D91B109E4E009BAF61 /* ObjectiveC2_Lesson6Tests.m */; };
+		8430B0E41B10AD00009BAF61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430B0E31B10AD00009BAF61 /* Foundation.framework */; };
+		8430B0E71B10AEBF009BAF61 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430B0E61B10AEBF009BAF61 /* DetailViewController.m */; };
+		8430B0EA1B10C59D009BAF61 /* CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430B0E91B10C59D009BAF61 /* CoreData.m */; };
+		8430B0EC1B10EC22009BAF61 /* Sunday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8430B0EB1B10EC22009BAF61 /* Sunday.jpg */; };
+		8471789D1B113D0700F50907 /* Friday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8471789C1B113D0700F50907 /* Friday.jpg */; };
+		847178A21B113D2C00F50907 /* Monday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8471789E1B113D2C00F50907 /* Monday.jpg */; };
+		847178A31B113D2C00F50907 /* Saturday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8471789F1B113D2C00F50907 /* Saturday.jpg */; };
+		847178A41B113D2C00F50907 /* Tuesday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 847178A01B113D2C00F50907 /* Tuesday.jpg */; };
+		847178A51B113D2C00F50907 /* Wednesday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 847178A11B113D2C00F50907 /* Wednesday.jpg */; };
+		847178A71B113D3D00F50907 /* Thursday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 847178A61B113D3D00F50907 /* Thursday.jpg */; };
+		849CBA3B1B11872F00CAE7CB /* CustumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CBA3A1B11872F00CAE7CB /* CustumTableViewCell.m */; };
+		84A71D8C1B11930200FE8638 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A71D8B1B11930200FE8638 /* UIKit.framework */; };
+		84A71D8E1B11931700FE8638 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A71D8D1B11931700FE8638 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +55,22 @@
 		8430B0D31B109E4E009BAF61 /* ObjectiveC2_Lesson6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveC2_Lesson6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8430B0D81B109E4E009BAF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8430B0D91B109E4E009BAF61 /* ObjectiveC2_Lesson6Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveC2_Lesson6Tests.m; sourceTree = "<group>"; };
+		8430B0E31B10AD00009BAF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8430B0E51B10AEBF009BAF61 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8430B0E61B10AEBF009BAF61 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8430B0E81B10C59D009BAF61 /* CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreData.h; sourceTree = "<group>"; };
+		8430B0E91B10C59D009BAF61 /* CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreData.m; sourceTree = "<group>"; };
+		8430B0EB1B10EC22009BAF61 /* Sunday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sunday.jpg; sourceTree = "<group>"; };
+		8471789C1B113D0700F50907 /* Friday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Friday.jpg; sourceTree = "<group>"; };
+		8471789E1B113D2C00F50907 /* Monday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Monday.jpg; sourceTree = "<group>"; };
+		8471789F1B113D2C00F50907 /* Saturday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Saturday.jpg; sourceTree = "<group>"; };
+		847178A01B113D2C00F50907 /* Tuesday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tuesday.jpg; sourceTree = "<group>"; };
+		847178A11B113D2C00F50907 /* Wednesday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wednesday.jpg; sourceTree = "<group>"; };
+		847178A61B113D3D00F50907 /* Thursday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thursday.jpg; sourceTree = "<group>"; };
+		849CBA391B11872F00CAE7CB /* CustumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustumTableViewCell.h; sourceTree = "<group>"; };
+		849CBA3A1B11872F00CAE7CB /* CustumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustumTableViewCell.m; sourceTree = "<group>"; };
+		84A71D8B1B11930200FE8638 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84A71D8D1B11931700FE8638 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A71D8E1B11931700FE8638 /* CoreData.framework in Frameworks */,
+				84A71D8C1B11930200FE8638 /* UIKit.framework in Frameworks */,
+				8430B0E41B10AD00009BAF61 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +97,9 @@
 		8430B0AE1B109E4E009BAF61 = {
 			isa = PBXGroup;
 			children = (
+				84A71D8D1B11931700FE8638 /* CoreData.framework */,
+				84A71D8B1B11930200FE8638 /* UIKit.framework */,
+				8430B0E31B10AD00009BAF61 /* Foundation.framework */,
 				8430B0B91B109E4E009BAF61 /* ObjectiveC2_Lesson6 */,
 				8430B0D61B109E4E009BAF61 /* ObjectiveC2_Lesson6Tests */,
 				8430B0B81B109E4E009BAF61 /* Products */,
@@ -83,10 +118,23 @@
 		8430B0B91B109E4E009BAF61 /* ObjectiveC2_Lesson6 */ = {
 			isa = PBXGroup;
 			children = (
+				847178A61B113D3D00F50907 /* Thursday.jpg */,
+				8471789E1B113D2C00F50907 /* Monday.jpg */,
+				8471789F1B113D2C00F50907 /* Saturday.jpg */,
+				847178A01B113D2C00F50907 /* Tuesday.jpg */,
+				847178A11B113D2C00F50907 /* Wednesday.jpg */,
+				8430B0EB1B10EC22009BAF61 /* Sunday.jpg */,
+				8471789C1B113D0700F50907 /* Friday.jpg */,
 				8430B0BE1B109E4E009BAF61 /* AppDelegate.h */,
 				8430B0BF1B109E4E009BAF61 /* AppDelegate.m */,
 				8430B0C41B109E4E009BAF61 /* ViewController.h */,
 				8430B0C51B109E4E009BAF61 /* ViewController.m */,
+				849CBA391B11872F00CAE7CB /* CustumTableViewCell.h */,
+				849CBA3A1B11872F00CAE7CB /* CustumTableViewCell.m */,
+				8430B0E81B10C59D009BAF61 /* CoreData.h */,
+				8430B0E91B10C59D009BAF61 /* CoreData.m */,
+				8430B0E51B10AEBF009BAF61 /* DetailViewController.h */,
+				8430B0E61B10AEBF009BAF61 /* DetailViewController.m */,
 				8430B0C71B109E4E009BAF61 /* Main.storyboard */,
 				8430B0CA1B109E4E009BAF61 /* Images.xcassets */,
 				8430B0CC1B109E4E009BAF61 /* LaunchScreen.xib */,
@@ -203,7 +251,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8430B0C91B109E4E009BAF61 /* Main.storyboard in Resources */,
+				847178A41B113D2C00F50907 /* Tuesday.jpg in Resources */,
+				847178A21B113D2C00F50907 /* Monday.jpg in Resources */,
+				847178A51B113D2C00F50907 /* Wednesday.jpg in Resources */,
+				847178A31B113D2C00F50907 /* Saturday.jpg in Resources */,
+				8430B0EC1B10EC22009BAF61 /* Sunday.jpg in Resources */,
 				8430B0CE1B109E4E009BAF61 /* LaunchScreen.xib in Resources */,
+				847178A71B113D3D00F50907 /* Thursday.jpg in Resources */,
+				8471789D1B113D0700F50907 /* Friday.jpg in Resources */,
 				8430B0CB1B109E4E009BAF61 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849CBA3B1B11872F00CAE7CB /* CustumTableViewCell.m in Sources */,
+				8430B0E71B10AEBF009BAF61 /* DetailViewController.m in Sources */,
 				8430B0C01B109E4E009BAF61 /* AppDelegate.m in Sources */,
+				8430B0EA1B10C59D009BAF61 /* CoreData.m in Sources */,
 				8430B0BD1B109E4E009BAF61 /* main.m in Sources */,
 				8430B0C61B109E4E009BAF61 /* ViewController.m in Sources */,
 				8430B0C31B109E4E009BAF61 /* ObjectiveC2_Lesson6.xcdatamodeld in Sources */,
@@ -418,6 +476,7 @@
 				8430B0DF1B109E4E009BAF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8430B0E01B109E4E009BAF61 /* Build configuration list for PBXNativeTarget "ObjectiveC2_Lesson6Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +485,7 @@
 				8430B0E21B109E4E009BAF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
