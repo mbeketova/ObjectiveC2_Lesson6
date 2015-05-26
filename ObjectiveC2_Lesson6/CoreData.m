@@ -37,7 +37,7 @@
     
     if (![[self managedObjectContext]save:&error]){
         //обработка ошибки
-        NSLog(@"ERROR = %@", error);
+       // NSLog(@"ERROR = %@", error);
     }
 }
 
@@ -75,7 +75,7 @@
     
     if (![[self managedObjectContext]save:&error]){
         //обработка ошибки
-        NSLog(@"ERROR = %@", error);
+       // NSLog(@"ERROR = %@", error);
     }
 }
 

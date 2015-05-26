@@ -39,6 +39,7 @@
     isPlaceHolderTextField = NO;
     
     
+    
     if (!self.isNew){
         
         //если открываем детали, то на экране видим: Дату, день недели, текст записи и картинку, соответствующую дню недели:
@@ -110,17 +111,16 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
-
-    
-//  достаем данные из БД (приходится через допонительный массив, т.к. через раз запись из коллекции в массив глючит, а через допмассив отлаживать удобнее)
-     CoreData * core = [CoreData new];
+//  достаем данные из БД
+    CoreData * core = [CoreData new];
     NSMutableArray * arrayNewRecord = [[NSMutableArray alloc]init];
     
-    NSMutableArray * arrayOldRecord = [[NSMutableArray alloc]init];
-    NSData * dataOld = [core gate_NSData:@"Records" Key:@"data"];
-    arrayOldRecord = [NSKeyedUnarchiver unarchiveObjectWithData:dataOld];
     
-    
+    if (!self.arrayOld.count == 0) {
+        NSData * data = [core gate_NSData:@"Records" Key:@"data"];
+        arrayNewRecord = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    }
+  
     //записываем в строку все, что будет набрано в текстфилде:
     NSString * stringTitle = self.textField.text;
     
@@ -154,21 +154,13 @@
    
     
     //заполняем массив:
-    arrayNewRecord = arrayOldRecord;
     [arrayNewRecord addObject:dict];
-    
-//    NSLog(@"%@",dict);
-//    NSLog(@"%@",arrayNewRecord);
-    
-    
+  
     
     //запаковываем массив в БД
     NSData * data = [NSKeyedArchiver archivedDataWithRootObject:arrayNewRecord];
     [core save_NSData:@"Records" Value:data Key:@"data"];
      
-    //возвращаемся обратно в таблицу
-    ViewController * table = [self.storyboard instantiateViewControllerWithIdentifier:@"table"];
-    [self.navigationController pushViewController:table animated:YES];
     }
     
     return YES;

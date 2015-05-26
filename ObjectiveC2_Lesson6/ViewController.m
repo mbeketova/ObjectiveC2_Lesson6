@@ -75,9 +75,9 @@
     
     [self reload_TableView];
     
-    //запаковываем данные обратно в БД (Records):
-    NSData * dataNew = [NSKeyedArchiver archivedDataWithRootObject:self.array_Events];
-    [core save_NSData:@"Records" Value:dataNew Key:@"data"];
+//    //запаковываем данные обратно в БД (Records):
+//    NSData * dataNew = [NSKeyedArchiver archivedDataWithRootObject:self.array_Events];
+//    [core save_NSData:@"Records" Value:dataNew Key:@"data"];
     
 
     
@@ -152,9 +152,17 @@
 
 - (IBAction)button_NewAction:(id)sender {
     
+
+    
     DetailViewController * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Detail"];
     detail.isNew = YES;
+    
+    if (!self.array_Events.count ==0) {
+        detail.arrayOld = self.array_Events;
+    }
+    
     [self.navigationController pushViewController:detail animated:YES];
+
     
     
 }
