@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSString * string_WeekDay;
 @property (nonatomic, strong) NSString * string_Text;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (strong, nonatomic) NSMutableArray * arrayOld;
+@property (nonatomic, assign) BOOL isArrayOld;
+
 
 @end

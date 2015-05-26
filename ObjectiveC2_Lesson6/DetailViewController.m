@@ -55,7 +55,7 @@
         NSDictionary*dict = [NSKeyedUnarchiver unarchiveObjectWithData:dataImage];
         self.imageView.image = [UIImage imageWithData:[dict objectForKey:self.string_WeekDay]];
         
-       
+      
         
         self.textField.alpha = 0;
         self.dataPicker.alpha = 0;
@@ -111,7 +111,8 @@
     NSMutableArray * arrayNewRecord = [[NSMutableArray alloc]init];
     
     
-    if (!self.arrayOld.count == 0) {
+    if (self.isArrayOld == YES) {
+        //уловие, если массив в БД не пустой, то достаем из БД предыдущие записи
         NSData * data = [core gate_NSData:@"Records" Key:@"data"];
         arrayNewRecord = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     }
@@ -136,7 +137,7 @@
     NSArray *days = [NSArray arrayWithObjects:@"Sunday", @"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", nil];
     NSCalendar *gregorian = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *weekdayComponents = [gregorian components:NSCalendarUnitWeekday fromDate:self.date_New_Event];
-    NSInteger weekday = [weekdayComponents weekday];
+    NSInteger weekday = [weekdayComponents weekday] - 1;
     NSString* string_WeekDay = [days objectAtIndex:weekday];
     
     

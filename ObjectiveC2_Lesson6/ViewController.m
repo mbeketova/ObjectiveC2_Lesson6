@@ -35,23 +35,25 @@
     self.array_Events = [[NSMutableArray alloc]init];
     CoreData * core = [CoreData new];
     
+    
     //запаковываем картинки в коллекцию
-    NSData * imageMonday= UIImagePNGRepresentation([UIImage imageNamed:@"Monday.jpg"]);
-    NSData * imageThursday = UIImagePNGRepresentation([UIImage imageNamed:@"Thursday.jpg"]);
-    NSData * imageSaturday = UIImagePNGRepresentation([UIImage imageNamed:@"Satutrday.jpg"]);
+    NSData * imageSunday = UIImagePNGRepresentation([UIImage imageNamed:@"Sunday.jpg"]);
+    NSData * imageMonday = UIImagePNGRepresentation([UIImage imageNamed:@"Monday.jpg"]);
     NSData * imageTuesday = UIImagePNGRepresentation([UIImage imageNamed:@"Tuesday.jpg"]);
     NSData * imageWednesday = UIImagePNGRepresentation([UIImage imageNamed:@"Wednesday.jpg"]);
-    NSData * imageSunday = UIImagePNGRepresentation([UIImage imageNamed:@"Sunday.jpg"]);
+    NSData * imageThursday = UIImagePNGRepresentation([UIImage imageNamed:@"Thursday.jpg"]);
     NSData * imageFriday = UIImagePNGRepresentation([UIImage imageNamed:@"Friday.jpg"]);
+    NSData * imageSaturday = UIImagePNGRepresentation([UIImage imageNamed:@"Saturday.jpg"]);
+ 
     
     NSDictionary * dict = [[NSDictionary alloc]initWithObjectsAndKeys:
+    imageSunday, @"Sunday",
     imageMonday, @"Monday",
-    imageThursday, @"Thursday",
-    imageSaturday, @"Satutrday",
     imageTuesday, @"Tuesday",
     imageWednesday, @"Wednesday",
-    imageSunday, @"Sunday",
-    imageFriday, @"Friday", nil];
+    imageThursday, @"Thursday",
+    imageFriday, @"Friday",
+    imageSaturday, @"Saturday", nil];
     
     // и добавляем коллекцию в БД (ImagesDay):
     NSData * data = [NSKeyedArchiver archivedDataWithRootObject:dict];
@@ -69,19 +71,13 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     //достаем из БД (Records) данные и записываем их в массив:
-    CoreData * core = [CoreData new];
-    NSData * data = [core gate_NSData:@"Records" Key:@"data"];
-    self.array_Events = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     
-    [self reload_TableView];
-    
-//    //запаковываем данные обратно в БД (Records):
-//    NSData * dataNew = [NSKeyedArchiver archivedDataWithRootObject:self.array_Events];
-//    [core save_NSData:@"Records" Value:dataNew Key:@"data"];
-    
-
-    
-    
+        CoreData * core = [CoreData new];
+        NSData * data = [core gate_NSData:@"Records" Key:@"data"];
+        self.array_Events = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        
+        [self reload_TableView];
+ 
 }
 
 
@@ -158,7 +154,7 @@
     detail.isNew = YES;
     
     if (!self.array_Events.count ==0) {
-        detail.arrayOld = self.array_Events;
+        detail.isArrayOld = YES;
     }
     
     [self.navigationController pushViewController:detail animated:YES];
