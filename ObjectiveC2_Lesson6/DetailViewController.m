@@ -55,12 +55,7 @@
         NSDictionary*dict = [NSKeyedUnarchiver unarchiveObjectWithData:dataImage];
         self.imageView.image = [UIImage imageWithData:[dict objectForKey:self.string_WeekDay]];
         
-        //запаковываем БД обратно
-        NSData * data = [NSKeyedArchiver archivedDataWithRootObject:dict];
-        [core save_NSData:@"ImagesDay" Value:data Key:@"images"];
-
-
-        
+       
         
         self.textField.alpha = 0;
         self.dataPicker.alpha = 0;
